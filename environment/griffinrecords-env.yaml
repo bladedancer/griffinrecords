@@ -5,7 +5,7 @@ title: Griffin Records
 name: griffinrecords
 attributes:
   version: 1.0.0
-tags: ["music"]
+tags: ["axway", "music"]
 spec:
   description: "All APIs relating to Griffin Records."
   icon:
