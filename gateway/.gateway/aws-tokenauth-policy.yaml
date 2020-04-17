@@ -1,0 +1,16 @@
+apiVersion: v1alpha1
+group: management
+scope: aws-axway
+kind: Policy
+title: Simple Auth Policy
+name: aws-tokenauth
+tags: ["axway", "aws", "auth"]
+spec:
+    description: Simple auth example.
+    type: jwt
+    config:
+        "x-amazon-apigateway-authtype": "custom"
+        "x-amazon-apigateway-authorizer": 
+            "authorizerUri": "arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:934549265897:function:GreetAuthorizer/invocations"
+            "authorizerResultTtlInSeconds": 0
+            "type": "token"

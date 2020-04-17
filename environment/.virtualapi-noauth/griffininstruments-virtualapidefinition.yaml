@@ -1,0 +1,13 @@
+apiVersion: v1alpha1
+group: management
+scope: griffinrecords
+kind: VirtualAPIDefinition
+title: Griffin Instruments V1
+name: griffininstrumentsv1
+tags:
+  - frontend
+  - music
+attributes:
+    version: 1.0.0
+spec:
+    description: Governance rules for v1 of Musical Instruments.

@@ -1,0 +1,11 @@
+apiVersion: v1alpha1
+group: management
+scope: griffinrecords
+kind: PathRoute
+title: Route for Musical Instruments v1
+name: griffininstrumentsv1route
+spec:
+    virtualAPIDefinition: griffininstrumentsv1
+    prefix: /api/music
+    target:
+        apiServiceInstance: musicalinstrumentsv1ars

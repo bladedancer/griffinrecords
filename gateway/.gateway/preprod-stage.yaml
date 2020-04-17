@@ -1,0 +1,11 @@
+apiVersion: v1alpha1
+group: management
+scope: aws-axway
+kind: Stage
+title: Pre-production
+name: preprod
+tags: ["axway", "aws", "preprod"]
+spec:
+    description: Preproduction deployment.
+    policies: 
+        tokenauth: aws-tokenauth
