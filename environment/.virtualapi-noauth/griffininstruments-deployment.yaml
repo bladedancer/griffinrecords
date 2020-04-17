@@ -3,7 +3,7 @@ group: management
 scope: griffinrecords
 kind: Deployment
 title: Griffin Musical Instruments v1 on AWS API Gateway
-name: griffininstrumentsv1route
+name: griffininstrumentsv1
 spec:
     virtualAPIDefinition: griffininstrumentsv1
     gatewayStage: aws-axway/preprod
