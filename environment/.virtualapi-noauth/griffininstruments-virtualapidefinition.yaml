@@ -11,3 +11,4 @@ attributes:
     version: 1.0.0
 spec:
     description: Governance rules for v1 of Musical Instruments.
+    virtualAPI: griffininstruments
