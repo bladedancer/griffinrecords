@@ -7,7 +7,6 @@ name: secgriffininstrumentsv1rules
 spec:
     virtualAPIDefinition: secgriffininstrumentsv1
     description: Governance rules
-    route: secgriffininstrumentsv1route
     auth: 
         jwt:
             policy: tokenauth
