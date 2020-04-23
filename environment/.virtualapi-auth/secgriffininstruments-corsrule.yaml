@@ -1,0 +1,35 @@
+apiVersion: v1alpha1
+group: management
+scope: griffinrecords
+kind: CorsRule
+title: CORS Rule on Griffin Instruments V1 with Auth
+name: secgriffininstrumentsv1corsrule
+spec:
+    description: Cross-Origin Resource Sharing rule for the musical instruments virtual API.
+    virtualAPIDefinition: secgriffininstrumentsv1
+    accessControlAllowOrigin: "*"
+    accessControlMaxAge: 600
+    accessControlAllowHeaders:
+        - Location
+        - X-Axway-Tenant-Id
+    accessControlAllowMethods:
+        - GET
+        - PUT
+        - POST
+        - DELETE
+---
+    apiVersion: v1alpha1
+    group: management
+    scope: griffinrecords
+    kind: CorsRule
+    title: CORS Rule on Griffin Instruments V1 with Auth
+    name: secgriffininstrumentsv1getcorsrule
+    spec:
+        description: Cross-Origin Resource Sharing rule for GET in the musical instruments virtual API.
+        virtualAPIDefinition: secgriffininstrumentsv1
+        accessControlAllowOrigin: "*"
+        accessControlAllowHeaders:
+            - Location
+            - X-Axway-Tenant-Id
+        accessControlExposeHeaders:
+            - Location
