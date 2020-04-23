@@ -8,7 +8,8 @@ spec:
     virtualAPIDefinition: secgriffininstrumentsv1
     cors: secgriffininstrumentsv1corsrule 
     methods:
-        get: {}
+        get:
+            auth: secgriffininstrumentsv1authrule
         post: {}
         put: {}
         delete: {}

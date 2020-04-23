@@ -1,0 +1,9 @@
+apiVersion: v1alpha1
+group: management
+scope: griffinrecords
+kind: RateLimitRule
+title: Rate limit for Griffin Instruments v1
+name: griffininstrumentsv1authrule
+spec:
+    virtualAPIDefinition: griffininstrumentsv1
+    transactionPerSecond: 100

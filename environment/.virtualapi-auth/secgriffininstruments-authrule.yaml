@@ -1,0 +1,10 @@
+apiVersion: v1alpha1
+group: management
+scope: griffinrecords
+kind: AuthRule
+title: AuthRule for Musical Instruments v1
+name: secgriffininstrumentsv1authrule
+spec:
+    virtualAPIDefinition: secgriffininstrumentsv1
+    jwt:
+        policy: tokenauth
