@@ -8,4 +8,5 @@ tags: ["axway", "aws", "preprod"]
 spec:
     description: Preproduction deployment.
     policies: 
-        tokenauth: aws-tokenauth
+        writersauth: aws-tokenauth
+        readersauth: aws-tokenauth
