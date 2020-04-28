@@ -6,8 +6,15 @@ title: Route for Musical Instruments v1
 name: griffininstrumentsv1route
 spec:
     virtualAPIDefinition: griffininstrumentsv1
+    cors: griffininstrumentsv1cors
+    auth: griffininstrumentsv1writers
     methods:
-        any: {}
+        get:
+            auth: griffininstrumentsv1readers
+        post: {}
+        put: {}
+        patch: {}
+        delete: {}
     prefix: /api/music
     target:
         apiServiceInstance: musicalinstrumentsv1ars

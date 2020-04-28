@@ -3,10 +3,10 @@ group: management
 scope: griffinrecords
 kind: CorsRule
 title: CORS Rule on Griffin Instruments V1 with Auth
-name: secgriffininstrumentsv1corsrule
+name: griffininstrumentsv1cors
 spec:
-    description: Cross-Origin Resource Sharing rule for the musical instruments virtual API.
-    virtualAPIDefinition: secgriffininstrumentsv1
+    description: Cross-Origin Resource Sharing rule for the Griffin Instruments Virtual API.
+    virtualAPIDefinition: griffininstrumentsv1
     accessControlAllowOrigin: "*"
     accessControlMaxAge: 600
     accessControlAllowHeaders:

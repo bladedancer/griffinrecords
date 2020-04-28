@@ -1,4 +1,4 @@
 environment/backend
-environment/virtualapi-auth
-environment/virtualapi-noauth
+environment/griffininstruments
 gateway/aws-axway
+gateway/axway-edge
