@@ -8,5 +8,7 @@ name: api-development
 tags: ["axway", "edge", "v7", "api-development"]
 spec:
     description: Stage for API Development org.
-    policies: {}
-    organizationId: 1df25336-43f6-4baf-989d-f93b104b0ff3
+    policies:
+        writersauth: axway-tokenauth
+        readersauth: axway-tokenauth
+    organizationId: c2c95205-1dd3-4cc4-8507-6e23d4700a47
