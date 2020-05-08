@@ -8,13 +8,6 @@ spec:
     virtualAPIDefinition: griffininstrumentsv1
     cors: griffininstrumentsv1cors
     auth: griffininstrumentsv1writers
-    methods:
-        get:
-            auth: griffininstrumentsv1readers
-        post: {}
-        put: {}
-        patch: {}
-        delete: {}
     prefix: /api/music
     target:
         apiServiceInstance: musicalinstrumentsv1ars
