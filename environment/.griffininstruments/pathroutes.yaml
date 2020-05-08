@@ -11,3 +11,5 @@ spec:
     prefix: /api/music
     target:
         apiServiceInstance: musicalinstrumentsv1ars
+        #credential: APIKeyCredential:musicalinstrumentcredential
+        credential: HttpBasicCredential:musicalinstrumentcredential
