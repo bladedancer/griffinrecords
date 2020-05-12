@@ -12,4 +12,6 @@ spec:
     target:
         apiServiceInstance: musicalinstrumentsv1ars
         #credential: APIKeyCredential:musicalinstrumentcredential
-        credential: HttpBasicCredential:musicalinstrumentcredential
+        #credential: APIKeyCredential:musicalinstrumentcredentialsecret
+        #credential: HttpBasicCredential:musicalinstrumentcredential
+        credential: HttpBasicCredential:musicalinstrumentcredentialsecret
