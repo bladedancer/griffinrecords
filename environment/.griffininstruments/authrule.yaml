@@ -1,21 +1,9 @@
 apiVersion: v1alpha1
 group: management
 scope: griffinrecords
-kind: AuthRule
-title: AuthRule for Griffin Instruments v1
+kind: JWTAuthRule
+title: JWT AuthRule for Griffin Instruments v1
 name: griffininstrumentsv1writers
 spec:
     virtualAPIDefinition: griffininstrumentsv1
-    jwt:
-        policy: writersauth
----
-apiVersion: v1alpha1
-group: management
-scope: griffinrecords
-kind: AuthRule
-title: AuthRule for Griffin Instruments v1
-name: griffininstrumentsv1readers
-spec:
-    virtualAPIDefinition: griffininstrumentsv1
-    jwt:
-        policy: readersauth
+    policy: writersauth

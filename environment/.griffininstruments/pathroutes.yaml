@@ -7,7 +7,7 @@ name: griffininstrumentsv1route
 spec:
     virtualAPIDefinition: griffininstrumentsv1
     cors: griffininstrumentsv1cors
-    auth: griffininstrumentsv1writers
+    auth: JWTAuthRule:griffininstrumentsv1writers
     prefix: /api/music
     target:
         apiServiceInstance: musicalinstrumentsv1ars
