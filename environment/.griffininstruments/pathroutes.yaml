@@ -9,9 +9,6 @@ spec:
     cors: griffininstrumentsv1cors
     auth: JWTAuthRule:griffininstrumentsv1writers
     prefix: /api/music
-    target:
+    route:
         apiServiceInstance: musicalinstrumentsv1ars
-        #credential: APIKeyCredential:musicalinstrumentcredential
-        #credential: APIKeyCredential:musicalinstrumentcredentialsecret
-        #credential: HttpBasicCredential:musicalinstrumentcredential
         credential: HttpBasicCredential:musicalinstrumentcredentialsecret
