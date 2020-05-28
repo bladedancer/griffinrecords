@@ -2,8 +2,8 @@ apiVersion: v1alpha1
 group: management
 scope: griffinrecords
 kind: CorsRule
-title: CORS Rule on Griffin Instruments V1 with Auth
-name: griffininstrumentsv1cors
+title: Permissive CORS Rule
+name: allowallcors
 spec:
     description: Cross-Origin Resource Sharing rule for the Griffin Instruments Virtual API.
     virtualAPIDefinition: griffininstrumentsv1
@@ -17,3 +17,24 @@ spec:
         - PUT
         - POST
         - DELETE
+---
+    apiVersion: v1alpha1
+    group: management
+    scope: griffinrecords
+    kind: CorsRule
+    title: Localhost CORS Rule on Griffin Instruments V1
+    name: localhostcors
+    spec:
+        description: Cross-Origin Resource Sharing rule that only allows localhost.
+        virtualAPIDefinition: griffininstrumentsv1
+        accessControlAllowOrigin: "localhost"
+        accessControlMaxAge: 600
+        accessControlAllowHeaders:
+            - Location
+            - X-Axway-Tenant-Id
+        accessControlAllowMethods:
+            - GET
+            - PUT
+            - POST
+            - DELETE
+    

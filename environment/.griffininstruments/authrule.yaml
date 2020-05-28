@@ -3,7 +3,19 @@ group: management
 scope: griffinrecords
 kind: JWTAuthRule
 title: JWT AuthRule for Griffin Instruments v1
-name: griffininstrumentsv1writers
+name: customjwtauth
 spec:
     virtualAPIDefinition: griffininstrumentsv1
     policy: writersauth
+---
+apiVersion: v1alpha1
+group: management
+scope: griffinrecords
+kind: APIKeyAuthRule
+title: APIKey AuthRule for Griffin Instruments v1
+name: apikeyauth
+spec:
+    virtualAPIDefinition: griffininstrumentsv1
+    in: header
+    name: api-key
+    

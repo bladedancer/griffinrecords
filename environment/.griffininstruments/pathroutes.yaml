@@ -6,9 +6,14 @@ title: Route for Musical Instruments v1
 name: griffininstrumentsv1route
 spec:
     virtualAPIDefinition: griffininstrumentsv1
-    cors: griffininstrumentsv1cors
-    auth: JWTAuthRule:griffininstrumentsv1writers
+    cors: allowallcors
+    auth: JWTAuthRule:customjwtauth
     prefix: /api/music
     route:
         apiServiceInstance: musicalinstrumentsv1ars
         credential: HttpBasicCredential:musicalinstrumentcredentialsecret
+        perPath:
+            - path: /instruments/query
+              cors: localhostcors
+              auth: APIKeyAuthRule:apikeyauth
+              credential: HttpBearerCredential:musicalinstrumentcredentialsecret
