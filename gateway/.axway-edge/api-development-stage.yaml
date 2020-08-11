@@ -11,4 +11,4 @@ spec:
     policies:
         writersauth: axway-tokenauth
         readersauth: axway-tokenauth
-    organizationId: d9855983-1f1b-44da-b3d1-c73b0462a06f
+    organizationId: 2d0c65a7-53f1-4a27-b3d1-88fa057ad50b
