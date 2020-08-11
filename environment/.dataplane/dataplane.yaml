@@ -1,6 +1,6 @@
 apiVersion: v1alpha1
 group: management
-kind: Gateway
+kind: Dataplane
 scope: griffinrecords
 title: Axway Edge API Gateway
 name: axway-edge

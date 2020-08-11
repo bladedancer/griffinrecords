@@ -2,18 +2,8 @@ apiVersion: v1alpha1
 group: management
 scope: griffinrecords
 kind: Deployment
-title: Griffin Musical Instruments v1 on AWS API Gateway
-name: griffininstrumentsv1awsDATE_TS
-spec:
-    virtualAPIDefinition: griffininstrumentsv1
-    gatewayStage: aws-axway/preprod
----
-apiVersion: v1alpha1
-group: management
-scope: griffinrecords
-kind: Deployment
 title: Griffin Musical Instruments v1 on Axway API Gateway
 name: griffininstrumentsv1axwayDATE_TS
 spec:
     virtualAPIDefinition: griffininstrumentsv1
-    gatewayStage: axway-edge/api-development
+    stage: api-development
