@@ -1,11 +1,12 @@
 apiVersion: v1alpha1
 group: management
-scope: axway-edge
+scope: griffinrecords
 kind: Policy
 title: Simple Auth Policy
 name: axway-tokenauth
 tags: ["axway", "edge", "auth"]
 spec:
+    dataplane: axway-edge
     description: Simple auth example.
     type: jwt
     config:

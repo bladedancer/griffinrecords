@@ -1,9 +1,0 @@
-apiVersion: v1alpha1
-group: management
-kind: Gateway
-title: AWS Axway
-name: aws-axway
-tags: ["axway", "aws"]
-spec:
-  description: AWS API Gateway on Axway ECD account.
-  type: aws

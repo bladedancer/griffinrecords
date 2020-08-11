@@ -1,6 +1,7 @@
 apiVersion: v1alpha1
 group: management
 kind: Gateway
+scope: griffinrecords
 title: Axway Edge API Gateway
 name: axway-edge
 tags: ["axway", "edge", "v7"]
