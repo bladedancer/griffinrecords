@@ -1,4 +1,3 @@
-# Not sure if this is a good idea or not...for now a stage per org id
 apiVersion: v1alpha1
 group: management
 scope: griffinrecords
@@ -12,4 +11,4 @@ spec:
     policies:
         writersauth: axway-tokenauth
         readersauth: axway-tokenauth
-    organizationId: 2d0c65a7-53f1-4a27-b3d1-88fa057ad50b
+    organizationName: API Development
